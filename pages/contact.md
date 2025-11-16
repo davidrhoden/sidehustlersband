@@ -9,7 +9,9 @@ eleventyNavigation:
   key: Contact
   order: 3
 ---
-The contact form on this page uses [Netlify Forms](https://www.netlify.com/docs/form-handling/) to process submissions,
-and saves them in the connected Netlify account where notifications can
-optionally be configured. Each submission is passed through a spam filter and
-if flagged, will display a CAPTCHA challenge to the user.
+
+If you put you name and email address here, we'll email you when we have a show.
+If you have questions you can ask those here too.
+We don't sell or share our email list.
+
+For booking inquiries, email Andrew at stoicrecordings@gmail.com.
