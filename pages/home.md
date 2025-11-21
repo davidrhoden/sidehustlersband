@@ -1,6 +1,6 @@
 ---
 layout: layouts/home.njk
-title: Home
+title: "The Side Hustlers: New Orleans and Beyond."
 date: 2025-11-21T00:00:00.000Z
 permalink: /
 eleventyNavigation:
