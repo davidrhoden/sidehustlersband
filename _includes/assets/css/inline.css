@@ -117,9 +117,11 @@ header > em {
 
 /* Header Nav */
 header nav ul {
+	list-style: none;
 	margin-top: 0;
 	padding: 0;
-	list-style: none;
+	position: relative;
+	z-index:10;
 }
 
 header nav ul :first-child {
