@@ -7,6 +7,3 @@ permalink: /
 ---
 
 ![Cartoon of Side Hustlers Band](/static/img/sidehustlers-cartoon-nov-21-2025.png)
-
-
-<audio src="static/audio/Grits%20Ain%27t%20Groceries.mp3" autobuffer controls>Grits Ain't Groceries</audio>
