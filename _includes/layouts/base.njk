@@ -3,7 +3,11 @@
 
 	{% include "components/head.njk" %}
 
+{% if section %}
+	<body class="{{ section }}">
+{% else %}
 	<body>
+{% endif %}
 
 		<header>
 				<a href="{{ '/' | url }}"><img src="/static/img/side-hustlers-wordmark-green.png" alt="{{ metadata.title }}"></a>
