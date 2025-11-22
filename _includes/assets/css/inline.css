@@ -117,6 +117,7 @@ header > em {
 
 /* Header Nav */
 header nav ul {
+	margin-top: 0;
 	padding: 0;
 	list-style: none;
 }
@@ -204,7 +205,7 @@ button {
   padding: .5em;
   margin-bottom: 1em;
 	font-size: 1rem;
-	font-family: "Avenir", "Avenir Next", sans-serif;
+	font-family: sans-serif;
 }
 
 input,
@@ -213,10 +214,15 @@ textarea {
 }
 
 button {
-	border: 1px solid var(--primary);
-	background-color: var(--primary);
-	color: var(--secondary);
+	border: 1px solid var(--secondary);
+	background-color: var(--secondary);
+	color: black;
 	cursor: pointer;
+}
+
+button:hover {
+	border: 1px solid var(--primary);
+	color: 1px solid var(--primary);
 }
 
 @media screen and (min-width:768px) {
@@ -226,6 +232,9 @@ button {
 	}
 	header a img {
 		width: 100%;
+	}
+	.home main img {
+		margin-top: -7em;
 	}
 	:root {
 		font-size: 1.1rem;
