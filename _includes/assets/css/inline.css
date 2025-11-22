@@ -76,7 +76,10 @@ main {
 	padding-bottom: 2em;
 }
 
-header,
+header {
+	text-align: right;
+}
+
 footer {
 	text-align: center;
 }
