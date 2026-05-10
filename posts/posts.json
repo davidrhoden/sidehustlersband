@@ -1,6 +1,6 @@
 {
   "layout": "layouts/post.njk",
-  "permalink": "posts/{{ title | slug }}/index.html",
+  "permalink": "posts/{{ title | slugify }}/index.html",
   "author": "The Side Hustlers",
   "tags": [
     "post"

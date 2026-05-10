@@ -4,7 +4,7 @@ pagination:
   data: collections.authors
   size: 1
   alias: author
-permalink: "authors/{{ author | slug }}/"
+permalink: "authors/{{ author | slugify }}/"
 eleventyComputed:
   author: "{{ author }}"
   title: "Posts by {{ author }}"
@@ -32,7 +32,7 @@ eleventyComputed:
 			{% endif %}
 			<p>
 				<time datetime="{{ post.date | machineDate }}">
-					<small>{{ post.date | readableDate }} by <a href="/authors/{{ post.author | slug }}/">{{ post.author }}</a></small>
+					<small>{{ post.date | readableDate }} by <a href="/authors/{{ post.author | slugify }}/">{{ post.author }}</a></small>
 				</time>
 			</p>
 			{% if post.tags %}

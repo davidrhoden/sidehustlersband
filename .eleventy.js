@@ -37,6 +37,13 @@ module.exports = function(eleventyConfig) {
     }, {});
   });
 
+  // Slugify filter that strips leading/trailing punctuation first
+  eleventyConfig.addFilter("slugify", str => {
+    if (!str) return "";
+    const trimmed = str.replace(/^[^\w]+|[^\w]+$/g, "");
+    return eleventyConfig.getFilter("slug")(trimmed);
+  });
+
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
@@ -76,6 +83,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // Don't process folders with static assets e.g. images
+  eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("static/audio");
   eleventyConfig.addPassthroughCopy("static/img");
