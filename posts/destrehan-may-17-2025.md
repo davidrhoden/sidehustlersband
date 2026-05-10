@@ -2,7 +2,7 @@
 title: Side Hustlers played our first show at a house party in Destrehan, Louisiana.
 date: 2025-05-17T00:00:00
 excerpt: We had to sing "Happy Birthday" to a little tyke (Andrew started it).
-image: /static/img/rock/unbelievables/unbelievables-scott-wagners-2-may-17-2025.jpeg
+image: /static/img/unbelievables-scott-wagners-2-may-17-2025.jpeg
 tags:
   - post
 
