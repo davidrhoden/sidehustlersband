@@ -1,0 +1,80 @@
+{% set announcement_post = null %}
+{% for post in collections.postsAndNotes | reverse %}
+  {% if announcement_post == null and post.data.announcement %}
+    {% set announcement_post = post %}
+  {% endif %}
+{% endfor %}
+
+{% if announcement_post %}
+<div class="modal micromodal-slide" id="modal-announcement" aria-hidden="true">
+  <div class="modal__overlay modal__overlay--centered" tabindex="-1" data-micromodal-close>
+    <div class="modal__container modal__container--announcement" role="dialog" aria-modal="true" aria-labelledby="modal-announcement-title">
+
+      <header class="modal__header modal__header--announcement">
+        <span class="modal__title modal__title--announcement" id="modal-announcement-title">Coming up</span>
+        <button class="modal__btn modal__btn-close" data-micromodal-close aria-label="Close announcement" type="button">
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+            <rect x="0" y="0" width="24" height="24" style="fill:#fff;"/>
+            <g fill="currentColor">
+              <path d="M5.636,2.808l15.556,15.556l-2.828,2.828l-15.556,-15.556l2.828,-2.828Z"/>
+              <path d="M2.808,18.364l15.556,-15.556l2.828,2.828l-15.556,15.556l-2.828,-2.828Z"/>
+            </g>
+          </svg>
+        </button>
+      </header>
+
+      <main class="modal__content" id="modal-announcement-content">
+        <div class="announcement-layout">
+
+          <div class="announcement-text">
+            <p class="announcement-date"><small>{{ announcement_post.date | readableDate }}</small></p>
+            <h2 class="announcement-title">
+              <a href="{{ announcement_post.url }}">{{ announcement_post.data.title }}</a>
+            </h2>
+            {% if announcement_post.data.excerpt %}
+              <p class="announcement-excerpt">{{ announcement_post.data.excerpt }}</p>
+            {% endif %}
+            <div class="announcement-interest">
+              <label class="announcement-interest-label">
+                <input
+                  type="checkbox"
+                  id="announcement-interest-check"
+                  class="announcement-interest-check"
+                  data-post-url="{{ announcement_post.url }}"
+                  data-post-title="{{ announcement_post.data.title | escape }}"
+                >
+                <span>Yes! Send me an e-mail reminder!</span>
+              </label>
+              <label class="announcement-interest-label announcement-decline-label">
+                <input
+                  type="checkbox"
+                  id="announcement-decline-check"
+                  class="announcement-decline-check"
+                >
+                <span>David, that is a Tuesday. Why would I go see your band on a Tuesday when I could be home watching Happy Days or something?</span>
+              </label>
+            </div>
+          </div>
+
+          {% if announcement_post.data.image %}
+          <div class="announcement-image">
+            <a href="{{ announcement_post.url }}">
+              <img src="{{ announcement_post.data.image }}" alt="{{ announcement_post.data.title }}">
+            </a>
+          </div>
+          {% endif %}
+
+        </div>
+      </main>
+
+    </div>
+  </div>
+</div>
+
+<div style="display:none">
+  <form name="announcement-interest" netlify>
+    <input type="text" name="post-title">
+    <input type="text" name="post-url">
+  </form>
+</div>
+{% endif %}

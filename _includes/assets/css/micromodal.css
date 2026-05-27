@@ -1,0 +1,260 @@
+/**************************\
+  Basic Modal Styles
+\**************************/
+
+.modal {
+  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: flex-start;  /* top-align vertically (default for search modal) */
+  padding: 120px 0 20px 0;  /* top padding for search modal */
+  justify-content: center;
+  overflow-y: auto;
+  z-index: 999;
+}
+
+/* Onetalker modal specific bottom-alignment */
+.micromodal-slide-up .modal__overlay {
+  align-items: flex-end;  /* bottom-align for onetalker modal */
+  padding: 20px 0 70px 0;  /* space at bottom for fixed onetalker */
+}
+
+@media screen and (max-width: 767px) {
+  .modal__overlay {
+    padding: 60px 0 20px 0;  /* reduce top padding on mobile for search modal */
+  }
+  
+  .micromodal-slide-up .modal__overlay {
+    padding: 20px 0 70px 0;  /* same bottom padding on mobile for onetalker */
+  }
+}
+
+.modal__container {
+  background-color: #fff;
+  padding: 0 30px;
+  max-width: 900px;    /* wider */
+  width: 90vw;         /* scale with viewport, but capped by max-width */
+  max-height: calc(100vh - 140px); /* leave room above and below */
+  border-radius: 4px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin: 0 -30px;
+  padding: 12px 30px;
+  background: var(--blue);
+  color: #fff;
+  border-radius: 4px 4px 0 0;
+}
+
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #00449e;
+  box-sizing: border-box;
+}
+
+.modal__close {
+  background: transparent;
+  border: 0;
+}
+
+.modal__header .modal__close:before { content: "\2715"; }
+
+.modal__content {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  color: rgba(0,0,0,.8);
+}
+
+.modal__btn {
+  font-size: .875rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: var(--blue);
+  /*color: rgba(0,0,0,.8);*/
+  color: var(--darkblue);
+  border-radius: .25rem;
+  border-style: none;
+  border-width: 0;
+  cursor: pointer;
+  -webkit-appearance: button;
+  text-transform: none;
+  overflow: visible;
+  line-height: 1.15;
+  margin: 0;
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+  will-change: transform;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  transition: -webkit-transform .25s ease-out;
+  transition: transform .25s ease-out;
+  transition: transform .25s ease-out,-webkit-transform .25s ease-out;
+}
+
+.modal__btn:focus, .modal__btn:hover {
+  background-color: var(--orangered);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.modal__btn-close {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  color: var(--lightblue);
+  cursor: pointer;
+  font-size: 0.875rem;
+  margin-left: 1rem;
+  padding: 0;
+  width: auto;
+}
+
+.modal__btn-close svg {
+  pointer-events: none;
+}
+
+.modal__btn-close:focus,
+.modal__btn-close:hover,
+.modal__btn-close:active {
+  background: transparent;
+  color: var(--orangered);
+  transform: scale(1.1);
+}
+
+.modal__btn-primary {
+  background-color: #00449e;
+  color: #fff;
+}
+
+.modal__btn {
+  width: auto;            /* don't stretch full width */
+  display: inline-flex;   /* optional: nicer alignment */
+  align-items: center;    /* optional */
+}
+
+
+
+/**************************\
+  Demo Animation Style
+\**************************/
+@keyframes mmfadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes mmfadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
+
+@keyframes mmslideIn {
+  from { transform: translateY(15%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes mmslideOut {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10%); }
+}
+
+.micromodal-slide {
+  display: none;
+}
+
+.micromodal-slide.is-open {
+  display: block;
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__overlay {
+  animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__container {
+  animation: mmslideIn .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__overlay {
+  animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__container {
+  animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide .modal__container,
+.micromodal-slide .modal__overlay {
+  will-change: transform;
+}
+
+#dialog {
+  display: none;
+}
+
+#dialog.is-open {
+  display: block;
+}
+
+/* Onetalker modal slide-up animation */
+@keyframes mmslideInFromBottom {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes mmslideOutToBottom {
+  from { transform: translateY(0); }
+  to { transform: translateY(100%); }
+}
+
+.micromodal-slide-up[aria-hidden="false"] .modal__container {
+  animation: mmslideInFromBottom .4s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide-up[aria-hidden="true"] .modal__container {
+  animation: mmslideOutToBottom .4s cubic-bezier(0, 0, .2, 1);
+}
+
+/* Onetalker modal container sizing */
+.onetalker-modal-container {
+  max-width: 90vw;
+  width: 90vw;
+  margin: 0;
+  font-size: calc(1em - 1px);
+}
+
+@media screen and (min-width: 768px) {
+  .onetalker-modal-container {
+    max-width: 50vw;
+    width: 50vw;
+    font-size: 1em;
+  }
+}
