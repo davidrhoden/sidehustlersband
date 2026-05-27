@@ -10,14 +10,15 @@
 
   {% set css %}
     {% include "assets/css/inline.css" %}
+    {% include "assets/css/micromodal.css" %}
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Smokum&display=swap" rel="stylesheet">
-  {# Uncomment below if you want to include minified inline JavaScript #}
-  {# {% set js %}
+{% set js %}
+    {% include "assets/js/micromodal.min.js" %}
     {% include "assets/js/inline.js" %}
   {% endset %}
-  <script>{{ js | jsmin | safe }}</script> #}
+  <script>{{ js | jsmin | safe }}</script>
 </head>
