@@ -37,6 +37,10 @@ module.exports = function(eleventyConfig) {
     }, {});
   });
 
+  eleventyConfig.addCollection("announcements", collection => {
+    return collection.getFilteredByGlob("posts/*.md").filter(post => post.data.announcement);
+  });
+
   // Slugify filter that strips leading/trailing punctuation first
   eleventyConfig.addFilter("slugify", str => {
     if (!str) return "";
