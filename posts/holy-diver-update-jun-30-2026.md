@@ -1,5 +1,5 @@
 ---
-title: Actually, Side Hustlers play Holy Diver with Marion Black The Outlaw and Ghostwriter, June 30, 2026.
+title: Actually, Side Hustlers play Holy Diver with Marion Black The Outlaw and Ghostwriter, Tuesday, June 30, 2026.
 date: 2026-06-30T00:00:00
 excerpt: A little change to the lineup.
 image: /static/img/side-hustlers-holy-diver-flyer-pink-jun-30-2026.jpg
@@ -15,11 +15,13 @@ tags:
 
 ![Flyer for Marion Black the Outlaw, Ghostwriter, and Side Hustlers at Holy Diver, June 30, 2026.](/static/img/side-hustlers-holy-diver-flyer-pink-jun-30-2026.jpg)
 
-A little change to the lineup. iIt now goes:
+A little change to the lineup. It now goes:
 
 Marion Black the Outlaw
 Ghostwriter (ATX)
 Side Hustlers
+
+**Doors at 9 because we want to get on stage by 9:15!! We get to go first and we don't wanna blow it!**
 
 [facebook event:](https://www.facebook.com/events/26955916530729064)
 
