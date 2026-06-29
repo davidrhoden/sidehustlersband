@@ -17,14 +17,29 @@ All are veterans of other bands, local, and not-so-local. Andrew was the guitari
 
 _Roy Carrier, Calvin Sam, **Andrew Donaldson**, and Phillip Carrier in front of the White House, 1998_
 
+-----
+
 Chan was the wild guitarist in The Stacks and Jimmy and The Wolfpack. He plays the keys with us. He's wild on the keys, too.
+
+![Chan, seen here stopping a rolling Swedish automobile; no big whoop.](/static/img/chan-stops-a-rolling-car.jpg)
+
+_Chan, seen here stopping a rolling Swedish automobile; no big whoop._
+
+-----
 
 C.C. is the drummer, and like all drummers he's in an incalculable number of other projects. One I can sort of keep track of is Sasquatch and Chase, a pretty busy two-piece group that plays around the Gulf Coast.
 
+-----
+
 Ken, our genius guitarist, was in The O-Pines with Steve Walkup (also the Stacks drummer) and David Olivier, formerly of the Bruisers.
 
-Dave is our front man, he is also the front man (and guitar player) in The Stacks. Previously he was the front man (and drummer) in Jimmy and The Wolfpack, and front man/guitarist in Dirty Knives. That's going back to the turn of the century though. Dave does not play an instrument in The Side Hustlers, not because he lacks proficiency (though there may be some truth to that scurrilous accusation), but because he wants to concentrate on ENTERTAINING YOU and getting the most from his one-octave vocal range.
+-----
 
-In 2026, these are The Side Hustlers. Somebody called the sound "garage R&B", and that describes us pretty well.
-High energy music you can dance to. It's entertainment. There aren't a whole lot of bands these days that can say that.
+![Dave Rhoden, Bourbon Street entertainer](/static/img/dave-rhoden-bourbon-street-entertainer-mar-4-2014.jpeg)
+
+Dave, depicted above, is our front man, he is also the front man (and guitar player) in The Stacks. Previously he was the front man (and drummer) in Jimmy and The Wolfpack, and front man/guitarist in Dirty Knives. That's going back to the turn of the century though. Dave does not play an instrument in The Side Hustlers, not because he lacks proficiency (though there may be some truth to that scurrilous accusation), but because he wants to concentrate on ENTERTAINING YOU and getting the most from his one-octave vocal range.
+
+-----
+
+In 2026, these are The Side Hustlers. Somebody called the sound "garage R&B", and that describes us pretty well.  High energy music you can dance to. It's entertainment. There aren't a whole lot of bands these days that can say that.
 Also, we would like to play a show in your garage.
