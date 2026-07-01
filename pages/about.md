@@ -37,9 +37,11 @@ Ken, our genius guitarist, was in The O-Pines with Steve Walkup (also the Stacks
 
 ![Dave Rhoden, Bourbon Street entertainer](/static/img/dave-rhoden-bourbon-street-entertainer-mar-4-2014.jpeg)
 
+_Dave Rhoden, Bourbon Street entertainer. Bourbon-faced on Bourbon Street._
+
 Dave, depicted above, is our front man, he is also the front man (and guitar player) in The Stacks. Previously he was the front man (and drummer) in Jimmy and The Wolfpack, and front man/guitarist in Dirty Knives. That's going back to the turn of the century though. Dave does not play an instrument in The Side Hustlers, not because he lacks proficiency (though there may be some truth to that scurrilous accusation), but because he wants to concentrate on ENTERTAINING YOU and getting the most from his one-octave vocal range.
 
 -----
 
-In 2026, these are The Side Hustlers. Somebody called the sound "garage R&B", and that describes us pretty well.  High energy music you can dance to. It's entertainment. There aren't a whole lot of bands these days that can say that.
+In 2026, these are The Side Hustlers. Somebody called the sound "garage R&B", and that describes us pretty well. Music you can dance to. It's entertainment.
 Also, we would like to play a show in your garage.
