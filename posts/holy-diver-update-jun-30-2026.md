@@ -4,7 +4,6 @@ date: 2026-06-30T00:00:00
 excerpt: A little change to the lineup.
 image: /static/img/side-hustlers-holy-diver-flyer-pink-jun-30-2026.jpg
 tags:
-  - shows
   - Holy Diver
   - Marion Black the Outlaw
   - Ghostwriter

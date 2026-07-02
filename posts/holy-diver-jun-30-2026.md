@@ -5,7 +5,8 @@ author: The Side Hustlers
 image: /static/img/side-hustlers-holy-diver-jun-30-2026.png
 announcement: true
 tags:
-  - post
+  - New Orleans
+  - Holy Diver
 
 ---
 

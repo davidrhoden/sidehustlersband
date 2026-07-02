@@ -4,7 +4,10 @@ date: 2025-05-17T00:00:00
 excerpt: We had to sing "Happy Birthday" to a little tyke (Andrew started it).
 image: /static/img/unbelievables-scott-wagners-2-may-17-2025.jpeg
 tags:
-  - post
+  - Destrehan
+  - fish fry
+  - The Unbelieveables
+  - Happy Birthday
 
 ---
 ![Unbelievables a.k.a. Side Hustlers playing in Scott's yard](/static/img/unbelievables-scott-wagners-2-may-17-2025.jpeg)
