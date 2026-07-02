@@ -18,4 +18,8 @@ Thanks to the other acts, Marion Black the Outlaw and Ghostwriter. Thanks to Nic
 
 Thanks to "M.X." for taking pictures--I know you said they would probably all be horrible, but we still hope you'll send us a couple.
 
+![Side Hustlers set list, Holy Diver, June 30, 3036](/static/img/side-hustlers-set-list-jun-30-2026.jpeg)
+
+![Side Hustlers lyric hints, Holy Diver, June 30, 3036](/static/img/side-hustlers-hints-jun-30-2026.jpeg)
+<figcaption>We just started practicing with this band, so I've got almost all the words memorized. I don't need any help.</figcaption>
 
