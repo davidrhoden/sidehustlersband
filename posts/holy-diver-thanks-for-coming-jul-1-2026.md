@@ -10,7 +10,7 @@ tags:
 
 ![Side Hustlers on stage at Holy Diver, June 30, 2026. Photo by Geoff Coats.](/static/img/side-hustlers-holy-diver-g-coats-1-jun-30-2026.jpeg)
 
-<figcaption>Side Hustlers on stage at Holy Diver, June 30, 2026. Photo by Geoff Coats.</figcaption>
+<figcaption>Four out of five Side Hustlers pictured on stage at Holy Diver, June 30, 2026. Photo by Geoff Coats. <i>Everybody else looks real; I look like a hologram. --DRR</i></figcaption>
 
 Thanks to everybody who came out for the Side Hustlers show at Holy Diver -- our first show in Orleans Parish.
 
