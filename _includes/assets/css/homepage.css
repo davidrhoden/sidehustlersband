@@ -1,0 +1,503 @@
+/* ============================================
+   HOMEPAGE.CSS - Component-specific styles
+   ============================================
+   Styles for homepage components (grids, newsletter).
+   Global article layout styles are in inline.css.
+   ============================================ */
+
+/* ============================================
+   RECENT POSTS GRID SECTION
+   ============================================ */
+
+.recent-posts-section {
+  background-color: var(--white);
+  border-top: 1px solid #e5e5e5;
+  margin-top: 2em;
+  padding: 3em 0 1em 0;
+}
+
+.recent-posts-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+/* Section labels for homepage sections */
+.section-label {
+  color: var(--black);
+  font-family: var(--font-secondary);
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin: 0 auto 1.5em auto;
+  max-width: 1120px;
+  padding: 0 1em;
+  text-align: left;
+}
+
+.recent-posts-carousel {
+  align-items: center;
+  display: flex;
+  gap: 0.5em;
+}
+
+.recent-posts-viewport {
+  container-type: inline-size;
+  flex: 1;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.recent-posts-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.recent-posts-track {
+  display: flex;
+  gap: 2em;
+}
+
+.carousel-btn {
+  align-items: center;
+  background: var(--lightblue);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  flex-shrink: 0;
+  height: 2.5em;
+  justify-content: center;
+  transition: background-color 0.15s ease;
+  width: 2.5em;
+}
+
+.carousel-btn img {
+  display: block;
+  filter: brightness(0) invert(1);
+  height: 1em;
+  width: 1.25em;
+}
+
+.carousel-btn-prev img {
+  transform: translateX(-1px);
+}
+
+.carousel-btn-next img {
+  transform: translateX(1px);
+}
+
+.carousel-btn:hover {
+  background: var(--orangered);
+}
+
+.carousel-btn[disabled] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.recent-post-card {
+  background-color: var(--white);
+  border-radius: 0.5em;
+  contain-intrinsic-size: 0 420px;
+  content-visibility: auto;
+  flex: none;
+  overflow: hidden;
+  scroll-snap-align: start;
+  width: 100cqi;
+}
+
+.post-type-label {
+  border-bottom: 1px solid var(--black);
+  font-family: var(--font-secondary);
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 0.5em 0 0;
+  padding-bottom: 0.25em;
+  text-transform: uppercase;
+}
+
+.recent-post-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.recent-post-image {
+  margin: 0;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+
+.recent-post-image img {
+  height: 100%;
+  margin: 0;
+  object-fit: contain;
+  width: 100%;
+}
+
+.recent-post-content {
+  padding: 1.5em;
+}
+
+.recent-post-title {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin: 0 0 0.5em 0;
+  color: var(--black);
+}
+
+.recent-post-excerpt {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--gray);
+  margin: 0 0 1em 0;
+}
+
+.recent-post-meta {
+  margin-top: 1em;
+}
+
+.recent-post-date {
+  font-family: var(--font-secondary);
+  font-size: 0.875rem;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ============================================
+   NEWSLETTER SIGNUP SECTION
+   ============================================ */
+
+.newsletter-signup-section {
+  background-color: #f9f9f9;
+  padding: 3em 0;
+  margin-top: 3em;
+  border-top: 1px solid #e5e5e5;
+}
+
+.newsletter-signup-container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.newsletter-signup-content {
+  text-align: center;
+}
+
+.newsletter-signup-heading {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.3;
+  margin: 0 0 0.5em 0;
+  color: var(--black);
+}
+
+.newsletter-signup-subheading {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--gray);
+  margin: 0 0 2em 0;
+}
+
+/* OVERRIDE: inline.css:531-534 - form styling */
+/* Original: form { display: grid; padding: 2em 0 1em; } */
+.newsletter-signup-form {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.newsletter-signup-fields {
+  display: flex;
+  gap: 0.5em;
+  max-width: 500px;
+  margin: 0 auto 1em auto;
+}
+
+/* OVERRIDE: inline.css:549-557 - input/button width */
+/* Original: input, textarea, button { width: 100%; padding: 1em; margin-bottom: 1em; ... } */
+.newsletter-signup-input {
+  flex: 1;
+  padding: 0.875em 1em;
+  margin: 0;
+  font-size: 1rem;
+  font-family: var(--font-primary);
+  border: 1px solid #ddd;
+  border-radius: 0.25em;
+  background-color: var(--white);
+  transition: border-color 0.3s ease;
+}
+
+.newsletter-signup-input:focus {
+  outline: none;
+  border-color: var(--blue);
+}
+
+.newsletter-signup-disclaimer {
+  font-family: var(--font-primary);
+  font-size: 0.875rem;
+  color: var(--gray);
+  margin: 1em 0 0 0;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - TABLET
+   ============================================ */
+
+@container (min-width: 600px) {
+  .recent-post-card {
+    width: calc(50cqi - 1em);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  
+  .latest-post-title {
+    font-size: 3rem;
+  }
+  
+  .newsletter-signup-heading {
+    font-size: 2rem;
+  }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - DESKTOP
+   ============================================ */
+
+@container (min-width: 900px) {
+  .recent-post-card {
+    width: calc(33.333cqi - 1.334em);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  
+  .latest-post-title {
+    font-size: 3rem;
+  }
+  
+  .latest-post-excerpt {
+    font-size: 1.5rem;
+  }
+  
+  .newsletter-signup-fields {
+    flex-direction: row;
+  }
+}
+
+/* ============================================
+   ANNOUNCEMENT MODAL
+   ============================================ */
+
+.modal__overlay--centered {
+  align-items: center;
+  padding: 20px;
+}
+
+.modal__container--announcement {
+  max-width: 860px;
+  width: 90vw;
+}
+
+.modal__header--announcement {
+  background: var(--orangered);
+}
+
+.modal__title--announcement {
+  color: #fff;
+  font-family: var(--font-secondary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.modal__header--announcement .modal__btn-close {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  color: var(--lightblue);
+  cursor: pointer;
+  padding: 0;
+  width: auto;
+}
+
+.modal__header--announcement .modal__btn-close svg {
+  pointer-events: none;
+}
+
+.modal__header--announcement .modal__btn-close:focus,
+.modal__header--announcement .modal__btn-close:hover,
+.modal__header--announcement .modal__btn-close:active {
+  background: transparent;
+  color: var(--orangered);
+  transform: scale(1.1);
+}
+
+.announcement-layout {
+  display: flex;
+  gap: 2em;
+}
+
+.announcement-text {
+  flex: 0 0 60%;
+  min-width: 0;
+}
+
+.announcement-image {
+  flex: 0 0 calc(40% - 2em);
+  min-width: 0;
+}
+
+.announcement-image a {
+  display: block;
+}
+
+.announcement-image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.announcement-date {
+  color: var(--gray);
+  font-family: var(--font-secondary);
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.5em 0;
+  text-transform: uppercase;
+}
+
+.announcement-title {
+  font-family: var(--font-secondary);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 0.75em 0;
+}
+
+.announcement-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.announcement-title a:hover {
+  color: var(--orangered);
+}
+
+.announcement-excerpt {
+  color: var(--gray);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin: 0 0 1.5em 0;
+}
+
+.announcement-interest {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 1.5em;
+  padding-top: 1.5em;
+}
+
+.announcement-interest-label {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  font-weight: 700;
+  gap: 0.6em;
+  line-height: 1.4;
+}
+
+.announcement-interest input[type="checkbox"] {
+  cursor: pointer;
+  flex-shrink: 0;
+  height: 1.2em;
+  margin-bottom: 0;
+  margin-top: 0.1em;
+  padding: 0;
+  width: 1.2em;
+}
+
+.announcement-interest {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+.announcement-declined {
+  padding: 2em 0;
+  text-align: center;
+}
+
+.announcement-declined p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin: 0 0 0.5em 0;
+}
+
+.announcement-countdown {
+  font-family: var(--font-secondary);
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5em 0;
+}
+
+.announcement-granted {
+  color: var(--orangered);
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 599px) {
+  .announcement-layout {
+    flex-direction: column-reverse;
+  }
+
+  .announcement-text,
+  .announcement-image {
+    flex: none;
+    width: 100%;
+  }
+
+  .announcement-title {
+    font-size: 1.375rem;
+  }
+}
+
+/* ============================================
+   MOBILE OPTIMIZATION
+   ============================================ */
+
+@media screen and (max-width: 599px) {
+  .newsletter-signup-fields {
+    flex-direction: column;
+    gap: 0.75em;
+  }
+  
+  .newsletter-signup-button {
+    width: 100%;
+  }
+  
+  .latest-post-title {
+    font-size: 2rem;
+  }
+  
+  .latest-post-excerpt {
+    font-size: 1.125rem;
+  }
+}

@@ -1,9 +1,5 @@
-{% set announcement_post = null %}
-{% for post in collections.postsAndNotes | reverse %}
-  {% if announcement_post == null and post.data.announcement %}
-    {% set announcement_post = post %}
-  {% endif %}
-{% endfor %}
+{% set announcements = collections.announcements | reverse %}
+{% set announcement_post = announcements | first %}
 
 {% if announcement_post %}
 <div class="modal micromodal-slide" id="modal-announcement" aria-hidden="true">
